@@ -1,0 +1,8 @@
+C1    | Fantasy
+C2    | Dystopian
+C3    | Fiction
+C4    | Romance
+C5    | History
+C6    | Self-Help
+C7    | Religion and Spirituality
+C10   | Philosophy

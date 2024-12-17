@@ -1,0 +1,5 @@
+001        | Harry Potter and the Philosopher's Stone           | Bloomsbury      | 1948-06-08 | Fantasy         | 8     | 15.99      | true  
+002        | The Hobbit                                         | Allen & Unwin   | 1948-06-08 | Fantasy         | 14    | 12.50      | true  
+003        | 1984                                               | Secker & Warburg | 1948-06-08 | Dystopian       | 22    | 10.00      | true  
+004        | To Kill a Mockingbird                              | J.B. Lippincott & Co. | 1948-06-08 | Fiction         | 24    | 18.75      | true  
+005        | Pride and Prejudice                                | T. Egerton, Whitehall | 1948-06-08 | Romance         | 30    | 9.99       | true  
