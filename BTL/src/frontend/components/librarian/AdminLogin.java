@@ -38,12 +38,12 @@ public class AdminLogin extends JFrame {
 		setResizable(false);
 
 		JLabel Title = new JLabel("Đăng nhập (Thủ thư)");
-		Title.setForeground(Color.GRAY);
+		Title.setForeground(Color.BLACK);
 		Title.setFont(new Font("Tahoma", Font.BOLD, 20));
 		Title.setBounds(61, 33, 301, 68);
 		getContentPane().add(Title);
 		
-		//form nhâph liệu
+		//form nhập liệu liệu
 		JLabel nameLb = new JLabel("Tài khoản");
 		nameLb.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		nameLb.setBounds(48, 112, 70, 14);
@@ -56,7 +56,7 @@ public class AdminLogin extends JFrame {
 
 		//đăng nhập
 		JButton submit = new JButton("Đăng nhập");
-		submit.setBackground(new Color(0, 255, 255));
+		submit.setBackground(new Color(100, 149, 237));
 		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String password=new String(adminPassword.getPassword());
@@ -99,7 +99,8 @@ public class AdminLogin extends JFrame {
 
 			}
 		});
-		ql.setBounds(10, 11, 89, 23);
+                ql.setBackground(new Color(100, 149, 237));
+		ql.setBounds(10, 11, 80, 25);
 		getContentPane().add(ql);
 
 	}

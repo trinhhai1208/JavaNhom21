@@ -11,13 +11,13 @@ public class UserLogin extends JFrame {
     public UserLogin(JFrame parent) {
 
         // Đặt tiêu đề
-        setTitle("Độc giả đăng nhập");
+        setTitle("Đăng nhập (Độc giả)");
         setResizable(false);
 
         // Tạo và cấu hình các thành phần
         JLabel headerLabel = new JLabel("Đăng nhập");
         headerLabel.setFont(new Font("Tahoma", Font.BOLD, 24));
-        headerLabel.setForeground(Color.gray);
+        headerLabel.setForeground(Color.BLACK);
 
         JLabel usernameLabel = new JLabel("Tên tài khoản:");
         JTextField usernameField = new JTextField(20);
@@ -27,6 +27,9 @@ public class UserLogin extends JFrame {
 
         JButton loginButton = new JButton("Đăng nhập");
         JButton backButton = new JButton("Quay lại");
+        
+        loginButton.setBackground(new Color(100, 149, 237));
+        backButton.setBackground(new Color(100, 149, 237));
 
         // tạo bảng điều khiển nút quay lại
         JPanel backButtonPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
@@ -98,9 +101,8 @@ public class UserLogin extends JFrame {
             parent.setVisible(true);
             dispose();
         });
-
         // Đặt kích thước
-        setSize(500, 300);
+        setSize(300, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);

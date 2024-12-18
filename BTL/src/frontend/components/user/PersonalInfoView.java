@@ -18,7 +18,7 @@ public class PersonalInfoView extends JFrame {
         // Tạo
         JLabel headerLabel = new JLabel("Thông tin cá nhân");
         headerLabel.setFont(new Font("Segoe UI", Font.BOLD, 24));
-        headerLabel.setForeground(Color.gray);
+        headerLabel.setForeground(Color.BLACK);
 
         JLabel nameLabel = new JLabel("Tên tài khoản: ");
         JLabel nameValue = new JLabel(currentUser.getTenDangNhap());

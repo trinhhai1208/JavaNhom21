@@ -24,7 +24,7 @@ public class Register {
         // Tạo các thành phần UI cho layout đăng ký
         JLabel lblNewLabel = new JLabel("Đăng ký tài khoản");
         lblNewLabel.setFont(new Font("Segoe UI", Font.BOLD, 24));
-        lblNewLabel.setForeground(Color.gray);
+        lblNewLabel.setForeground(Color.BLACK);
 
         JLabel lblName = new JLabel("Tên người dùng:");
         JTextField txtName = new JTextField();
@@ -41,7 +41,7 @@ public class Register {
         JLabel lblPassword = new JLabel("Mật khẩu:");
         JPasswordField txtPassword = new JPasswordField();
         JLabel lblPasswordHint = new JLabel("Mật khẩu phải có ít nhất 5 ký tự gồm 1 chữ in hoa, 1 chữ số");
-        lblPasswordHint.setForeground(Color.GRAY);
+        lblPasswordHint.setForeground(Color.RED);
 
         JLabel lblConfirmPassword = new JLabel("Xác nhận mật khẩu:");
         JPasswordField txtConfirmPassword = new JPasswordField();
@@ -50,7 +50,9 @@ public class Register {
         lblMismatchMessage.setForeground(Color.RED);
 
         JButton btnRegister = new JButton("Đăng ký");
+        btnRegister.setBackground(new Color(100, 149, 237));
         JButton btnBack = new JButton("Quay lại");
+        btnBack.setBackground(new Color(100, 149, 237));
 
         lblNewLabel.setBounds(90,10,300,30);
 

@@ -3,3 +3,8 @@
 003        | 1984                                               | Secker & Warburg | 1948-06-08 | Dystopian       | 22    | 10.00      | true  
 004        | To Kill a Mockingbird                              | J.B. Lippincott & Co. | 1948-06-08 | Fiction         | 24    | 18.75      | true  
 005        | Pride and Prejudice                                | T. Egerton, Whitehall | 1948-06-08 | Romance         | 30    | 9.99       | true  
+006        | The Lord of the Rings                              | Allen & Unwin   | 1948-06-08 | Fantasy         | 1178  | 29.99      | true  
+007        | Animal Farm                                        | Secker & Warburg | 1948-06-08 | Dystopian       | 112   | 9.99       | true  
+008        | The Great Gatsby                                   | Charles Scribner's Sons | 1948-06-08 | Fiction         | 218   | 14.99      | true  
+009        | The Catcher in the Rye                             | Little, Brown and Company | 1948-06-08 | Fiction         | 277   | 16.99      | true  
+010        | Wuthering Heights                                  | T. Cadell       | 1948-06-08 | Romance         | 342   | 11.99      | true  

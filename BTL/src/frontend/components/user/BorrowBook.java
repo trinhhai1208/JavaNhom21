@@ -32,7 +32,7 @@ public class BorrowBook extends JFrame {
     public BorrowBook(JFrame parentFrame) {
         this.parentFrame = parentFrame;
         setTitle("Xem lịch sử mượn sách");
-        setSize(900, 600);
+        setSize(400, 500);
         setExtendedState(JFrame.MAXIMIZED_BOTH); // Make the frame fullscreen
         setLayout(new BorderLayout());
         setLocationRelativeTo(null);

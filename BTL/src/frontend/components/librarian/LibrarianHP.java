@@ -67,14 +67,14 @@ public class LibrarianHP extends JFrame {
 		title.setForeground(new Color(128, 128, 128));
 		title.setFont(new Font("Tahoma", Font.BOLD, 26));
 		title.setBounds(418, 35, 269, 35);
-		ImageIcon library=ImageProcess.scaled("../Assets/33874-200.png",75,75);
+		ImageIcon library=ImageProcess.scaled("../Assets/library.png",50,50);
 		title.setIcon(library);
 		
 		
 		//phần header
 		header.add(title);
 		JLabel adminLogo = new JLabel();
-		ImageIcon admin=ImageProcess.scaled("../Assets/1144760.png", 61, 61);
+		ImageIcon admin=ImageProcess.scaled("../Assets/admin.png", 61, 61);
 		adminLogo.setBounds(37, 28, 61, 61);
 		adminLogo.setIcon(admin);
 		header.add(adminLogo);
@@ -130,7 +130,7 @@ public class LibrarianHP extends JFrame {
 		header.add(search);
 		
 		//tải lại trang
-		ImageIcon reload=ImageProcess.scaled("../Assets/reload.png",23,23);
+		ImageIcon reload=ImageProcess.scaled("../Assets/reload_icon.png",23,23);
 		JButton ref = new JButton("");
 		
 		ref.setIcon(reload);
@@ -150,17 +150,17 @@ public class LibrarianHP extends JFrame {
 		nav.setLayout(null);
 		
 		//mục sách
-		JLabel sach = new JLabel("    Sách");
+		JLabel sach = new JLabel(" Sách");
 		sach.setForeground(new Color(255, 255, 255));
 		sach.setBackground(new Color(192, 192, 192));
 		sach.setFont(new Font("Tahoma", Font.BOLD, 14));
 		sach.setBounds(10, 37, 126, 35);
 		nav.add(sach);
-		ImageIcon book=ImageProcess.scaled("../Assets/151594.png", 27, 27);
+		ImageIcon book=ImageProcess.scaled("../Assets/book.png", 35, 35);
 		sach.setIcon(book);
-		ImageIcon add=ImageProcess.scaled("../Assets/262038.png",20,20);
-		ImageIcon delete=ImageProcess.scaled("../Assets/delete-icon-1864x2048-bp2i0gor.png", 20, 20);
-		ImageIcon modify=ImageProcess.scaled("../Assets/modify-icon-512x512-clqmeplb.png", 20, 20);
+		ImageIcon add=ImageProcess.scaled("../Assets/add_icon.png",25,25);
+		ImageIcon delete=ImageProcess.scaled("../Assets/delete.png", 25, 25);
+		ImageIcon modify=ImageProcess.scaled("../Assets/modify.png", 25, 25);
 		
 		//thêm sách
 		JPanel panel_2 = new JPanel();
@@ -177,7 +177,7 @@ public class LibrarianHP extends JFrame {
 		nav.add(panel_2);
 		panel_2.setLayout(null);
 		
-		JLabel addb = new JLabel("  Thêm sách");
+		JLabel addb = new JLabel(" Thêm sách");
 		addb.setBounds(0, 0, 163, 40);
 		panel_2.add(addb);
 		addb.setForeground(new Color(255, 255, 255));
@@ -200,7 +200,7 @@ public class LibrarianHP extends JFrame {
 		nav.add(panel_2_1);
 		panel_2_1.setLayout(null);
 		
-		JLabel delb = new JLabel("  Xoá sách");
+		JLabel delb = new JLabel(" Xoá sách");
 		delb.setBounds(0, 0, 163, 40);
 		panel_2_1.add(delb);
 		delb.setForeground(new Color(255, 255, 255));
@@ -215,7 +215,7 @@ public class LibrarianHP extends JFrame {
 		nav.add(panel_2_2);
 		panel_2_2.setLayout(null);
 	
-		JLabel modifyb = new JLabel("  Sửa thông tin sách");
+		JLabel modifyb = new JLabel(" Sửa thông tin sách");
 		panel_2_2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -231,12 +231,12 @@ public class LibrarianHP extends JFrame {
 		modifyb.setIcon(modify);
 		
 		//mục người dùng
-		JLabel useropt = new JLabel("    Người dùng");
+		JLabel useropt = new JLabel(" Người dùng");
 		useropt.setForeground(Color.WHITE);
 		useropt.setFont(new Font("Tahoma", Font.BOLD, 14));
 		useropt.setBackground(Color.LIGHT_GRAY);
 		useropt.setBounds(0, 241, 163, 27);
-		ImageIcon user=ImageProcess.scaled("../Assets/1077063.png", 27, 27);
+		ImageIcon user=ImageProcess.scaled("../Assets/user.png", 28, 28);
 		useropt.setIcon(user);
 		nav.add(useropt);
 		
@@ -248,7 +248,7 @@ public class LibrarianHP extends JFrame {
 		nav.add(panel_2_3);
 		Animation.onHoover(panel_2_3,new Color(0,128,255) , new Color(0,128,192));
 		
-		JLabel borrowApp = new JLabel("Yêu cầu mượn/trả sách");
+		JLabel borrowApp = new JLabel(" Yêu cầu mượn/trả sách");
 		panel_2_3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -260,7 +260,7 @@ public class LibrarianHP extends JFrame {
 		});
 		borrowApp.setForeground(Color.WHITE);
 		borrowApp.setBounds(0, 0, 163, 40);
-		ImageIcon borrow=ImageProcess.scaled("../Assets/borrow.png", 20, 20);
+		ImageIcon borrow=ImageProcess.scaled("../Assets/borrow_book.png", 25, 25);
 		borrowApp.setIcon(borrow);
 		panel_2_3.add(borrowApp);
 		
@@ -281,10 +281,10 @@ public class LibrarianHP extends JFrame {
 		nav.add(panel_2_4);
 		Animation.onHoover(panel_2_4, new Color(0,128,255) , new Color(0,128,192));
 		
-		JLabel violations = new JLabel("Phiếu vi phạm");
+		JLabel violations = new JLabel(" Phiếu vi phạm");
 		violations.setForeground(Color.WHITE);
 		violations.setBounds(0, 0, 163, 40);
-		ImageIcon vipham=ImageProcess.scaled("../Assets/warning-icon-512x511-3vl9qoze.png", 20, 20);
+		ImageIcon vipham=ImageProcess.scaled("../Assets/aleart.png", 25, 25);
 		violations.setIcon(vipham);
 		panel_2_4.add(violations);
 		
@@ -297,7 +297,7 @@ public class LibrarianHP extends JFrame {
 		nav.add(panel_2_4_1);
 		Animation.onHoover(panel_2_4_1, new Color(0,128,255) , new Color(0,128,192));
 		
-		JLabel lockacc = new JLabel("Khoá tài khoản");
+		JLabel lockacc = new JLabel(" Khoá tài khoản");
 		panel_2_4_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -309,17 +309,17 @@ public class LibrarianHP extends JFrame {
 		});
 		lockacc.setForeground(Color.WHITE);
 		lockacc.setBounds(0, 0, 163, 40);
-		ImageIcon banned=ImageProcess.scaled("../Assets/banned.png", 20, 20);
+		ImageIcon banned=ImageProcess.scaled("../Assets/banned.png", 25, 25);
 		lockacc.setIcon(banned);
 		panel_2_4_1.add(lockacc);
 		
 		//mục thủ thư
-		JLabel librarian = new JLabel("Thủ thư");
+		JLabel librarian = new JLabel(" Thủ thư");
 		librarian.setForeground(Color.WHITE);
 		librarian.setFont(new Font("Tahoma", Font.BOLD, 14));
 		librarian.setBackground(Color.LIGHT_GRAY);
 		librarian.setBounds(10, 424, 103, 27);
-		ImageIcon libra=ImageProcess.scaled("../Assets/librarian.png", 27, 27);
+		ImageIcon libra=ImageProcess.scaled("../Assets/librarian.png", 35, 35);
 		librarian.setIcon(libra);
 		nav.add(librarian);
 		
@@ -331,7 +331,7 @@ public class LibrarianHP extends JFrame {
 		nav.add(panel_2_4_1_1);
 		Animation.onHoover(panel_2_4_1_1, new Color(0,128,255) , new Color(0,128,192));
 		
-		JLabel changeP = new JLabel("Đổi mật khẩu");
+		JLabel changeP = new JLabel(" Đổi mật khẩu");
 		panel_2_4_1_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -343,7 +343,7 @@ public class LibrarianHP extends JFrame {
 		});
 		changeP.setForeground(Color.WHITE);
 		changeP.setBounds(0, 0, 163, 40);
-		ImageIcon change1=ImageProcess.scaled("../Assets/change-password-5.png", 20, 20);
+		ImageIcon change1=ImageProcess.scaled("../Assets/change_password.png", 25, 25);
 		changeP.setIcon(change1);
 		panel_2_4_1_1.add(changeP);
 		
@@ -480,7 +480,7 @@ public class LibrarianHP extends JFrame {
 		FetchData.fetchUser(model1);
 		table_1 = new JTable(model1);
 		JScrollPane jsp1 = new JScrollPane(table_1);
-	    jsp1.setBounds(779, 424, 558, 229);
+                jsp1.setBounds(779, 424, 558, 229);
 		getContentPane().add(jsp1);
 		
 		//tải lại trang
